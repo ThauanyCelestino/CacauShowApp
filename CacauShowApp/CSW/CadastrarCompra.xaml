@@ -598,10 +598,12 @@
                 <Image Source="/Imagens/editar.png"/>
             </Button>
             <Label Content="Fornecedor" HorizontalAlignment="Left" Margin="91,249,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <Button  HorizontalAlignment="Left" Margin="395,274,0,0" VerticalAlignment="Top" Height="50" Width="65" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="795,274,0,0" VerticalAlignment="Top" Height="45" Width="60" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/entregador.png"/>
             </Button>
-           
+            <Label Content="Forma de pagamento" HorizontalAlignment="Left" Margin="390,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="395,289,0,0" VerticalAlignment="Top" Width="265" Height="30" SelectionChanged="ComboBox_SelectionChanged"/>
+
 
         </Grid>
 
