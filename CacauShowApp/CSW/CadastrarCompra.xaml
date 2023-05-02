@@ -186,7 +186,7 @@
 
                         <!--Button Despesas-->
 
-                        <Button x:Name="Despesas"  Background="{x:Null}" BorderBrush="{x:Null}" Click="despesas_click"
+                        <Button x:Name="Despesas"  Background="{x:Null}" BorderBrush="{x:Null}" 
                                       >
 
                             <!--// Tooltip //-->
@@ -602,7 +602,7 @@
                 <Image Source="/Imagens/entregador.png"/>
             </Button>
             <Label Content="Forma de pagamento" HorizontalAlignment="Left" Margin="355,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" Width="255"/>
-            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="360,289,0,0" VerticalAlignment="Top" Width="240" Height="30" SelectionChanged="ComboBox_SelectionChanged"/>
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="360,289,0,0" VerticalAlignment="Top" Width="240" Height="30" />
             <Label Content="Funcionário" HorizontalAlignment="Left" Margin="625,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="630,289,0,0" VerticalAlignment="Top" Width="220" Height="30" RenderTransformOrigin="0.5,0.5"/>
 

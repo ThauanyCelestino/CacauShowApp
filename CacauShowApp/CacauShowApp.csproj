@@ -63,6 +63,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CSW\CadastrarFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CSW\ListarDespesas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -84,6 +88,9 @@
     </Compile>
     <Compile Include="CSW\CadastrarDespesas.xaml.cs">
       <DependentUpon>CadastrarDespesas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CSW\CadastrarFuncionario.xaml.cs">
+      <DependentUpon>CadastrarFuncionario.xaml</DependentUpon>
     </Compile>
     <Compile Include="CSW\ListarDespesas.xaml.cs">
       <DependentUpon>ListarDespesas.xaml</DependentUpon>

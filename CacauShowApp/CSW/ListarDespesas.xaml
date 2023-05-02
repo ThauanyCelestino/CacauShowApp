@@ -159,7 +159,7 @@
 
                         <!--Button Despesas-->
 
-                        <Button x:Name="Despesas"  Background="{x:Null}" BorderBrush="{x:Null}" Click="despesas_click"
+                        <Button x:Name="Despesas"  Background="{x:Null}" BorderBrush="{x:Null}" 
                                       >
 
                             <!--// Tooltip //-->
@@ -570,7 +570,7 @@
             <Button  HorizontalAlignment="Left" Margin="780,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
                 <Image Source="/Imagens/excluir.png"></Image>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="720,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black" Click="Button_Click">
+            <Button  HorizontalAlignment="Left" Margin="720,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black" >
                 <Image Source="/Imagens/editar.png" Height="30" Width="30"></Image>
             </Button>
 
