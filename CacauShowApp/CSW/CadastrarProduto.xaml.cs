@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace CacauShowApp.CSW
 {
     /// <summary>
-    /// Lógica interna para ListarDespesas.xaml
+    /// Lógica interna para CadastrarProduto.xaml
     /// </summary>
-    public partial class ListarDespesas : Window
+    public partial class CadastrarProduto : Window
     {
-        public ListarDespesas()
+        public CadastrarProduto()
         {
             InitializeComponent();
         }

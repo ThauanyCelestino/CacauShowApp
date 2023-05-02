@@ -61,21 +61,15 @@
 
             <Label Content="Nome" HorizontalAlignment="Left" Margin="92,84,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Valor Unit." HorizontalAlignment="Left" Margin="91,176,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="95,289,0,0" VerticalAlignment="Top" Width="245" Height="30" RenderTransformOrigin="0.5,0.5">
 
-            </ComboBox>
-            <TextBox BorderThickness="1" HorizontalAlignment="Left" Margin="95,129,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="465" Height="30" RenderTransformOrigin="0.5,0.5" FontSize="20" FontFamily="Arial" >
-
-            </TextBox>
-
-            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="95,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" >
+            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="95,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" >
 
             </TextBox>
             <Label Content="Data" HorizontalAlignment="Left" Margin="609,86,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Quantidade" HorizontalAlignment="Left" Margin="260,174,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Valor total" HorizontalAlignment="Left" Margin="442,174,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Vencimento" HorizontalAlignment="Left" Margin="609,171,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,214,0,0" VerticalAlignment="Top" Width="235"/>
+            <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,209,0,0" VerticalAlignment="Top" Width="235"/>
             <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,124,0,0" VerticalAlignment="Top" Width="235"/>
 
             <Button  HorizontalAlignment="Left" Margin="800,579,0,0" VerticalAlignment="Top" Height="65" Width="80" FontSize="25" BorderBrush="{x:Null}" >
@@ -107,7 +101,7 @@
 
                         <!--// Home //-->
 
-                        <Button x:Name="Estoque"   Background="{x:Null}" BorderBrush="{x:Null}"
+                        <Button x:Name="Estoque"   Background="{x:Null}" BorderBrush="{x:Null}" Click="Estoque_Click"
                                       >
 
                             <!--// Tooltip //-->
@@ -184,84 +178,6 @@
                         </Button>
 
 
-                        <!--Button Despesas-->
-
-                        <Button x:Name="Despesas"  Background="{x:Null}" BorderBrush="{x:Null}" 
-                                      >
-
-                            <!--// Tooltip //-->
-
-                            <Button.ToolTip>
-
-                                <ToolTip x:Name="tt_despesas"
-                                         Content="Despesas"
-                                         Style="{StaticResource tt_style}"/>
-
-                            </Button.ToolTip>
-
-                            <Button.Style>
-                                <Style TargetType="{x:Type Button}">
-
-                                    <Setter Property="Template">
-
-                                        <Setter.Value>
-
-                                            <ControlTemplate TargetType="{x:Type Button}">
-
-                                                <Border x:Name="Bd"
-                                                    Height="50"
-                                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                                    BorderThickness="{TemplateBinding BorderThickness}"
-                                                    Background="{TemplateBinding Background}"
-                                                    Padding="{TemplateBinding Padding}"
-                                                    SnapsToDevicePixels="True">
-
-                                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-
-                                                </Border>
-
-                                                <ControlTemplate.Triggers>
-
-                                                    <MultiTrigger>
-
-                                                        <MultiTrigger.Conditions>
-
-                                                            <Condition Property="IsMouseOver" Value="True"/>
-
-                                                        </MultiTrigger.Conditions>
-
-                                                        <Setter Property="Background"
-                                                            TargetName="Bd"
-                                                            Value="#404D5B"/>
-
-                                                        <Setter Property="BorderBrush"
-                                                            TargetName="Bd"
-                                                            Value="#404D5B"/>
-
-                                                    </MultiTrigger>
-
-                                                </ControlTemplate.Triggers>
-
-                                            </ControlTemplate>
-
-                                        </Setter.Value>
-
-                                    </Setter>
-
-                                </Style>
-                            </Button.Style>
-
-
-                            <!-- Despesas icon-->
-                            <Image Source="/Imagens/dsimg.png"
-                                       Stretch="Uniform"
-                                       Width="60" Height="45" Margin="0,0,5,0"/>
-
-
-
-                        </Button>
 
                         <!--Button Vendas-->
 
@@ -344,7 +260,7 @@
 
 
                         <!--// Button Compras //-->
-                        <Button x:Name="Compras"  Background="{x:Null}" BorderBrush="{x:Null}" Height="50"
+                        <Button x:Name="Compras"  Background="{x:Null}" BorderBrush="{x:Null}" Height="50" Click="Compras_Click"
                                       >
 
                             <!--// Tooltip //-->
@@ -423,7 +339,7 @@
                         <Button x:Name="Funcionarios"  
                                 Background="{x:Null}" 
                                 BorderBrush="{x:Null}"
-                                Height="49">
+                                Height="49" Click="Funcionarios_Click">
 
 
                             <!--// Tooltip //-->
@@ -585,8 +501,8 @@
 
 
             </Grid>
-            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="265,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
-            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="445,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
+            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="265,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
+            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="445,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
             <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="100,354,165,115" Height="NaN"/>
             <Button  HorizontalAlignment="Left" Margin="740,369,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
@@ -597,14 +513,13 @@
             <Button  HorizontalAlignment="Left" Margin="740,479,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/editar.png"/>
             </Button>
-            <Label Content="Fornecedor" HorizontalAlignment="Left" Margin="91,249,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <Button  HorizontalAlignment="Left" Margin="820,334,0,0" VerticalAlignment="Top" Height="45" Width="60" FontSize="25" BorderBrush="{x:Null}" >
-                <Image Source="/Imagens/entregador.png"/>
-            </Button>
-            <Label Content="Forma de pagamento" HorizontalAlignment="Left" Margin="355,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" Width="255"/>
-            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="360,289,0,0" VerticalAlignment="Top" Width="240" Height="30" />
-            <Label Content="Funcionário" HorizontalAlignment="Left" Margin="625,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="630,289,0,0" VerticalAlignment="Top" Width="220" Height="30" RenderTransformOrigin="0.5,0.5"/>
+            <Label Content="Forma de pagamento" HorizontalAlignment="Left" Margin="90,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" Width="255"/>
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="95,289,0,0" VerticalAlignment="Top" Width="240" Height="30" />
+            <Label Content="Funcionário" HorizontalAlignment="Left" Margin="390,249,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="395,289,0,0" VerticalAlignment="Top" Width="220" Height="30" RenderTransformOrigin="0.5,0.5"/>
+            <Label Content="Cód." HorizontalAlignment="Left" Margin="425,86,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+            <TextBox BorderThickness="1" HorizontalAlignment="Left" Margin="430,129,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="165" Height="30" RenderTransformOrigin="0.5,0.5" FontSize="20" FontFamily="Arial" />
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="95,124,0,0" VerticalAlignment="Top" Width="290" Height="30" />
 
 
         </Grid>
