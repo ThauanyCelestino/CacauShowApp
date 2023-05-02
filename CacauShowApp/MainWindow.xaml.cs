@@ -24,5 +24,11 @@ namespace CacauShowApp
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RealizarLogin realizarLogin = new RealizarLogin();
+            realizarLogin.ShowDialog();
+        }
     }
 }

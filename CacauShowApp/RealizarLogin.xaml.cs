@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CacauShowApp.CSW
+namespace CacauShowApp
 {
     /// <summary>
-    /// Lógica interna para CadastrarCompra.xaml
+    /// Lógica interna para RealizarLogin.xaml
     /// </summary>
-    public partial class CadastrarCompra : Window
+    public partial class RealizarLogin : Window
     {
-        public CadastrarCompra()
+        public RealizarLogin()
         {
             InitializeComponent();
         }
