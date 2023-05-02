@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using CacauShowApp.CSW;
-namespace CacauShowApp
+
+namespace CacauShowApp.CSW
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para ListarCompras.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ListarCompras : Window
     {
-        public MainWindow()
+        public ListarCompras()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            CadastrarCompra compra = new CadastrarCompra();
-            compra.Show();
         }
     }
 }

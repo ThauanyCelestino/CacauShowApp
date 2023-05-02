@@ -1,11 +1,11 @@
-﻿<Window x:Class="CacauShowApp.CSW.ListarEstoque"
+﻿<Window x:Class="CacauShowApp.CSW.ListarCompras"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CacauShowApp.CSW"
         mc:Ignorable="d"
-        Title="ListarEstoque" Height="600" 
+        Title="ListarCompras" Height="600" 
         Width="870"
         Topmost="True"
         WindowStartupLocation="CenterScreen"
@@ -157,7 +157,7 @@
                         </Button>
 
 
-                     
+
 
                         <!--Button Vendas-->
 
@@ -480,7 +480,7 @@
 
 
             </Grid>
-            <Label Content="Estoque" Margin="380,24,240,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="40" Height="70"/>
+            <Label Content="Compras" Margin="365,24,255,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="40" Height="70"/>
 
             <DataGrid Margin="85,209,25,25"  />
             <Button  HorizontalAlignment="Left" Margin="700,104,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Height="35" Width="35" >
@@ -495,10 +495,6 @@
             </Button>
             <Button  HorizontalAlignment="Left" Margin="720,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
                 <Image Source="/Imagens/editar.png" Height="30" Width="30"></Image>
-            </Button>
-
-            <Button x:Name="Produto"  HorizontalAlignment="Left" Margin="85,159,0,0" VerticalAlignment="Top" Height="45" Width="90" BorderBrush="Black" Click="Produto_Click">
-                <Image Source="/Imagens/registro.png"></Image>
             </Button>
             <TextBox HorizontalAlignment="Left" Margin="85,106,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="600" Height="30"/>
             <Button  HorizontalAlignment="Left" Margin="655,159,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
