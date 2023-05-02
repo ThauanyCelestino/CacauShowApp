@@ -414,7 +414,8 @@
 
                             <!--Compras icon-->
                             <Image Source="/Imagens/compra.png"
-                                       Width="58" Height="43"/>
+                                       Stretch="Uniform"
+                                       Width="46" Height="49" Margin="10,0,0,0"/>
 
                         </Button>
 
@@ -600,6 +601,7 @@
             <Button  HorizontalAlignment="Left" Margin="395,274,0,0" VerticalAlignment="Top" Height="50" Width="65" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/entregador.png"/>
             </Button>
+           
 
         </Grid>
 
