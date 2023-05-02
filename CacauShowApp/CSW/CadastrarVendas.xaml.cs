@@ -15,11 +15,19 @@ using System.Windows.Shapes;
 namespace CacauShowApp.CSW
 {
     /// <summary>
-    /// Lógica interna para CadastrarProduto.xaml
+<<<<<<<< HEAD:CacauShowApp/CSW/ListarCompras.xaml.cs
+    /// Lógica interna para ListarCompras.xaml
     /// </summary>
-    public partial class CadastrarProduto : Window
+    public partial class ListarCompras : Window
     {
-        public CadastrarProduto()
+        public ListarCompras()
+========
+    /// Lógica interna para CadastrarVendas.xaml
+    /// </summary>
+    public partial class CadastrarVendas : Window
+    {
+        public CadastrarVendas()
+>>>>>>>> Hilary:CacauShowApp/CSW/CadastrarVendas.xaml.cs
         {
             InitializeComponent();
         }
