@@ -24,6 +24,10 @@ namespace CacauShowApp.CSW
             InitializeComponent();
         }
 
-   
+        private void Funcionario_Click(object sender, RoutedEventArgs e)
+        {
+            ListarFuncionarios funcionarios = new ListarFuncionarios();
+            funcionarios.ShowDialog();
+        }
     }
 }

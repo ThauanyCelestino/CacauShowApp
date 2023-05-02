@@ -557,7 +557,7 @@
 
 
             </Grid>
-            <Label Content="Funcionários" Margin="330,24,290,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="40" Height="70"/>
+            <Label Content="Funcionários" Margin="330,24,215,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="40" Height="70"/>
 
             <DataGrid Margin="85,209,25,25"  />
             <Button  HorizontalAlignment="Left" Margin="700,104,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Height="35" Width="35" >
@@ -574,8 +574,8 @@
                 <Image Source="/Imagens/editar.png" Height="30" Width="30"></Image>
             </Button>
 
-            <Button  HorizontalAlignment="Left" Margin="85,159,0,0" VerticalAlignment="Top" Height="45" Width="90" BorderBrush="Black">
-                <Image Source="/Imagens/registro.png"></Image>
+            <Button x:Name="Funcionario1"  HorizontalAlignment="Left" Margin="85,159,0,0" VerticalAlignment="Top" Height="45" Width="90" BorderBrush="Black" Click="Funcionario1_Click">
+                <Image x:Name="Funcionario" Source="/Imagens/registro.png"></Image>
             </Button>
             <TextBox HorizontalAlignment="Left" Margin="85,106,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="600" Height="30"/>
             <Button  HorizontalAlignment="Left" Margin="655,159,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >

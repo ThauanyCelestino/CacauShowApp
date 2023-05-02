@@ -745,7 +745,7 @@
             </Grid>
 
             <Label Content="Cadastrar Funcionário" Margin="261,19,205,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="40" Height="70" Width="NaN"/>
-            <TextBox HorizontalAlignment="Left" Margin="115,109,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="665" Height="30"/>
+            <TextBox HorizontalAlignment="Left" Margin="120,109,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="660" Height="30"/>
             <Label Content="Função" HorizontalAlignment="Left" Margin="111,151,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" RenderTransformOrigin="1.074,2.556"/>
             <Label Content="E-mail" HorizontalAlignment="Left" Margin="401,241,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Contato" HorizontalAlignment="Left" Margin="111,334,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
@@ -771,7 +771,10 @@
 
         </Grid>
 
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="107,79,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="115,79,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+        <Button x:Name="Funcionario"  HorizontalAlignment="Left" Margin="755,384,0,0" VerticalAlignment="Top" Height="45" Width="90" BorderBrush="Black" Click="Funcionario_Click">
+            <Image Source="/Imagens/registro.png"/>
+        </Button>
 
 
 

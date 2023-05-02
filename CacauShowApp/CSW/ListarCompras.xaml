@@ -1,18 +1,19 @@
-﻿<Window x:Class="CacauShowApp.CSW.CadastrarProduto"
+﻿<Window x:Class="CacauShowApp.CSW.ListarCompras"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CacauShowApp.CSW"
         mc:Ignorable="d"
-        Title="CadastrarProduto" Height="680" 
-        Width="900"
+        Title="ListarCompras" Height="600" 
+        Width="870"
         Topmost="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ToolWindow">
+
+
+
     <Window.Resources>
-
-
 
 
         <!--// Tooltip Style Template //-->
@@ -56,29 +57,6 @@
         <Grid  Background="#FF131725" Grid.ColumnSpan="2" Margin="0,0,0,-5" Grid.RowSpan="3">
 
 
-            <Label Content="Cadastrar Produto
-                   
-" Margin="275,19,190,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="40" Height="70"/>
-
-            <Label Content="Nome" HorizontalAlignment="Left" Margin="92,84,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <Label Content="Valor Unit." HorizontalAlignment="Left" Margin="91,176,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-
-            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="95,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" >
-
-            </TextBox>
-            <Label Content="Data" HorizontalAlignment="Left" Margin="609,86,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <Label Content="Quantidade" HorizontalAlignment="Left" Margin="260,174,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <Label Content="Valor total" HorizontalAlignment="Left" Margin="442,174,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <Label Content="Vencimento" HorizontalAlignment="Left" Margin="609,171,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,209,0,0" VerticalAlignment="Top" Width="235"/>
-            <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,124,0,0" VerticalAlignment="Top" Width="235"/>
-
-            <Button  HorizontalAlignment="Left" Margin="800,579,0,0" VerticalAlignment="Top" Height="65" Width="80" FontSize="25" BorderBrush="{x:Null}" >
-                <Image Source="/imagens/salvar.png"></Image>
-            </Button>
-            <Button HorizontalAlignment="Left" Margin="680,579,0,0" VerticalAlignment="Top" Height="65" Width="75" BorderBrush="Black">
-                <Image Source= "/imagens/cancelar.png" Height="51" Width="51" />
-            </Button>
 
             <!--// Menu de navegação//-->
 
@@ -179,84 +157,7 @@
                         </Button>
 
 
-                        <!--Button Despesas-->
 
-                        <Button x:Name="Despesas"  Background="{x:Null}" BorderBrush="{x:Null}" 
-                                      >
-
-                            <!--// Tooltip //-->
-
-                            <Button.ToolTip>
-
-                                <ToolTip x:Name="tt_despesas"
-                                         Content="Despesas"
-                                         Style="{StaticResource tt_style}"/>
-
-                            </Button.ToolTip>
-
-                            <Button.Style>
-                                <Style TargetType="{x:Type Button}">
-
-                                    <Setter Property="Template">
-
-                                        <Setter.Value>
-
-                                            <ControlTemplate TargetType="{x:Type Button}">
-
-                                                <Border x:Name="Bd"
-                                                    Height="50"
-                                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                                    BorderThickness="{TemplateBinding BorderThickness}"
-                                                    Background="{TemplateBinding Background}"
-                                                    Padding="{TemplateBinding Padding}"
-                                                    SnapsToDevicePixels="True">
-
-                                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-
-                                                </Border>
-
-                                                <ControlTemplate.Triggers>
-
-                                                    <MultiTrigger>
-
-                                                        <MultiTrigger.Conditions>
-
-                                                            <Condition Property="IsMouseOver" Value="True"/>
-
-                                                        </MultiTrigger.Conditions>
-
-                                                        <Setter Property="Background"
-                                                            TargetName="Bd"
-                                                            Value="#404D5B"/>
-
-                                                        <Setter Property="BorderBrush"
-                                                            TargetName="Bd"
-                                                            Value="#404D5B"/>
-
-                                                    </MultiTrigger>
-
-                                                </ControlTemplate.Triggers>
-
-                                            </ControlTemplate>
-
-                                        </Setter.Value>
-
-                                    </Setter>
-
-                                </Style>
-                            </Button.Style>
-
-
-                            <!-- Despesas icon-->
-                            <Image Source="/Imagens/dsimg.png"
-                                       Stretch="Uniform"
-                                       Width="60" Height="45" Margin="0,0,5,0"/>
-
-
-
-                        </Button>
 
                         <!--Button Vendas-->
 
@@ -409,8 +310,7 @@
 
                             <!--Compras icon-->
                             <Image Source="/Imagens/compra.png"
-                                       Stretch="Uniform"
-                                       Width="46" Height="49" Margin="10,0,0,0"/>
+                                       Width="70" Height="43" Margin="10,0,0,0"/>
 
                         </Button>
 
@@ -580,25 +480,29 @@
 
 
             </Grid>
-            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="265,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
-            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="445,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
-            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="100,329,165,115" Height="NaN"/>
-            <Button  HorizontalAlignment="Left" Margin="740,329,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Label Content="Compras" Margin="365,24,255,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="40" Height="70"/>
+
+            <DataGrid Margin="85,209,25,25"  />
+            <Button  HorizontalAlignment="Left" Margin="700,104,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Height="35" Width="35" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Imagens/lupa.png"/>
+                </Button.Background>
+            </Button>
+
+
+            <Button  HorizontalAlignment="Left" Margin="780,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
+                <Image Source="/Imagens/excluir.png"></Image>
+            </Button>
+            <Button  HorizontalAlignment="Left" Margin="720,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
+                <Image Source="/Imagens/editar.png" Height="30" Width="30"></Image>
+            </Button>
+            <TextBox HorizontalAlignment="Left" Margin="85,106,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="600" Height="30"/>
+            <Button  HorizontalAlignment="Left" Margin="655,159,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="740,389,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
-                <Image Source="/Imagens/excluir.png"/>
-            </Button>
-            <Button  HorizontalAlignment="Left" Margin="740,444,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
-                <Image Source="/Imagens/editar.png"/>
-            </Button>
-            <Label Content="Cód." HorizontalAlignment="Left" Margin="425,86,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <TextBox BorderThickness="1" HorizontalAlignment="Left" Margin="430,129,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="165" Height="30" RenderTransformOrigin="0.5,0.5" FontSize="20" FontFamily="Arial" />
-            <TextBox BorderThickness="1" HorizontalAlignment="Left" Margin="100,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="290" Height="30" RenderTransformOrigin="0.5,0.5" FontSize="20" FontFamily="Arial" />
-
-
         </Grid>
 
 
     </Grid>
+
 </Window>

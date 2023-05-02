@@ -38,7 +38,7 @@ namespace CacauShowApp.CSW
 
         private void Funcionarios_Click(object sender, RoutedEventArgs e)
         {
-            CadastrarFuncionario funcionario = new CadastrarFuncionario();
+            ListarFuncionarios funcionario = new ListarFuncionarios();
             funcionario.ShowDialog();   
         }
     }
