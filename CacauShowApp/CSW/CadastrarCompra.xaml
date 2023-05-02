@@ -72,10 +72,10 @@
             <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,209,0,0" VerticalAlignment="Top" Width="235"/>
             <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,124,0,0" VerticalAlignment="Top" Width="235"/>
 
-            <Button  HorizontalAlignment="Left" Margin="800,579,0,0" VerticalAlignment="Top" Height="65" Width="80" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="780,569,0,0" VerticalAlignment="Top" Height="65" Width="80" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/imagens/salvar.png"></Image>
             </Button>
-            <Button HorizontalAlignment="Left" Margin="680,579,0,0" VerticalAlignment="Top" Height="65" Width="75" BorderBrush="Black">
+            <Button HorizontalAlignment="Left" Margin="680,569,0,0" VerticalAlignment="Top" Height="65" Width="75" BorderBrush="Black">
                 <Image Source= "/imagens/cancelar.png" Height="51" Width="51" />
             </Button>
 
