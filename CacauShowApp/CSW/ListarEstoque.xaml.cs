@@ -15,13 +15,19 @@ using System.Windows.Shapes;
 namespace CacauShowApp.CSW
 {
     /// <summary>
-    /// Lógica interna para ListarCompras.xaml
+    /// Lógica interna para ListarEstoque.xaml
     /// </summary>
-    public partial class ListarCompras : Window
+    public partial class ListarEstoque : Window
     {
-        public ListarCompras()
+        public ListarEstoque()
         {
             InitializeComponent();
+        }
+
+        private void Produto_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarProduto produto = new CadastrarProduto();
+            produto.ShowDialog();
         }
     }
 }
