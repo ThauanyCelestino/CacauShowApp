@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Iniciar programa" Click="Button_Click" Margin="238,104,238,113"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="370,189,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
     </Grid>
 </Window>
