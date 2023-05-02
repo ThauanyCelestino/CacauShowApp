@@ -15,11 +15,16 @@ using System.Windows.Shapes;
 namespace CacauShowApp.CSW
 {
     /// <summary>
+<<<<<<< HEAD:CacauShowApp/CSW/ListarCompras.xaml.cs
 <<<<<<<< HEAD:CacauShowApp/CSW/ListarCompras.xaml.cs
     /// Lógica interna para ListarCompras.xaml
+=======
+    /// Lógica interna para ListarDespesas.xaml
+>>>>>>> parent of b8e22bb (Merge branch 'Thauany'):CacauShowApp/CSW/ListarDespesas.xaml.cs
     /// </summary>
-    public partial class ListarCompras : Window
+    public partial class ListarDespesas : Window
     {
+<<<<<<< HEAD:CacauShowApp/CSW/ListarCompras.xaml.cs
         public ListarCompras()
 ========
     /// Lógica interna para CadastrarVendas.xaml
@@ -28,6 +33,9 @@ namespace CacauShowApp.CSW
     {
         public CadastrarVendas()
 >>>>>>>> Hilary:CacauShowApp/CSW/CadastrarVendas.xaml.cs
+=======
+        public ListarDespesas()
+>>>>>>> parent of b8e22bb (Merge branch 'Thauany'):CacauShowApp/CSW/ListarDespesas.xaml.cs
         {
             InitializeComponent();
         }
