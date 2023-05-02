@@ -587,13 +587,13 @@
             <TextBox FontSize="20" HorizontalAlignment="Left" Margin="265,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
             <TextBox FontSize="20" HorizontalAlignment="Left" Margin="445,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
             <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="90,354,175,135"/>
-            <Button  HorizontalAlignment="Left" Margin="735,379,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="735,369,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="735,434,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="735,424,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/excluir.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="735,489,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="735,479,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/editar.png"/>
             </Button>
             <Label Content="Fornecedor" HorizontalAlignment="Left" Margin="91,249,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
