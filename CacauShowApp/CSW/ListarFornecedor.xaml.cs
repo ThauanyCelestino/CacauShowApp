@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace CacauShowApp.CSW
 {
     /// <summary>
-    /// Lógica interna para CadastrarFuncionario.xaml
+    /// Lógica interna para ListarFornecedor.xaml
     /// </summary>
-    public partial class CadastrarFuncionario : Window
+    public partial class ListarFornecedor : Window
     {
-        public CadastrarFuncionario()
+        public ListarFornecedor()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
