@@ -61,7 +61,7 @@
 
             <Label Content="Nome" HorizontalAlignment="Left" Margin="92,84,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Valor Unit." HorizontalAlignment="Left" Margin="91,176,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="95,289,0,0" VerticalAlignment="Top" Width="265" Height="30" RenderTransformOrigin="0.5,0.5">
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="95,289,0,0" VerticalAlignment="Top" Width="245" Height="30" RenderTransformOrigin="0.5,0.5">
 
             </ComboBox>
             <TextBox BorderThickness="1" HorizontalAlignment="Left" Margin="95,129,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="465" Height="30" RenderTransformOrigin="0.5,0.5" FontSize="20" FontFamily="Arial" >
@@ -257,7 +257,7 @@
                             <!-- Despesas icon-->
                             <Image Source="/Imagens/dsimg.png"
                                        Stretch="Uniform"
-                                       Width="60" Height="45"/>
+                                       Width="60" Height="45" Margin="0,0,5,0"/>
 
 
 
@@ -587,22 +587,24 @@
             </Grid>
             <TextBox FontSize="20" HorizontalAlignment="Left" Margin="265,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
             <TextBox FontSize="20" HorizontalAlignment="Left" Margin="445,219,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
-            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="90,354,175,135"/>
-            <Button  HorizontalAlignment="Left" Margin="735,369,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="100,354,165,115" Height="NaN"/>
+            <Button  HorizontalAlignment="Left" Margin="740,369,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="735,424,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="740,424,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/excluir.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="735,479,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="740,479,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/editar.png"/>
             </Button>
             <Label Content="Fornecedor" HorizontalAlignment="Left" Margin="91,249,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <Button  HorizontalAlignment="Left" Margin="795,274,0,0" VerticalAlignment="Top" Height="45" Width="60" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="820,334,0,0" VerticalAlignment="Top" Height="45" Width="60" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/entregador.png"/>
             </Button>
-            <Label Content="Forma de pagamento" HorizontalAlignment="Left" Margin="390,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="395,289,0,0" VerticalAlignment="Top" Width="265" Height="30" SelectionChanged="ComboBox_SelectionChanged"/>
+            <Label Content="Forma de pagamento" HorizontalAlignment="Left" Margin="355,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" Width="255"/>
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="360,289,0,0" VerticalAlignment="Top" Width="240" Height="30" SelectionChanged="ComboBox_SelectionChanged"/>
+            <Label Content="Funcionário" HorizontalAlignment="Left" Margin="625,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="630,289,0,0" VerticalAlignment="Top" Width="220" Height="30" RenderTransformOrigin="0.5,0.5"/>
 
 
         </Grid>
