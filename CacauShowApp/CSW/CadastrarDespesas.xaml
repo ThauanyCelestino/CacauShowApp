@@ -54,7 +54,7 @@
 
         <!--// Background Color //-->
 
-        <Grid  Background="#FF131725" Grid.ColumnSpan="2" Margin="0,0,0,-5" Grid.RowSpan="3">
+        <Grid  Background="#FF131725" Grid.ColumnSpan="2" Margin="0,-5,0,0" Grid.RowSpan="2">
 
 
             <Label Content="Cadastrar Despesas" Margin="275,19,190,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial                    " FontSize="40" Height="70"/>
@@ -72,7 +72,7 @@
             <Label Content="Data de vencimento" HorizontalAlignment="Left" Margin="575,226,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Pago a" HorizontalAlignment="Left" Margin="270,226,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Forma de pagamento" HorizontalAlignment="Left" Margin="270,346,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="275,389,0,0" VerticalAlignment="Top" Width="265" Height="30" SelectionChanged="ComboBox_SelectionChanged"/>
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="275,389,0,0" VerticalAlignment="Top" Width="265" Height="30" />
             <Label Content="Data de Pagamento" HorizontalAlignment="Left" Margin="575,344,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="580,384,0,0" VerticalAlignment="Top" Width="235"/>
             <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="580,264,0,0" VerticalAlignment="Top" Width="235"/>
@@ -192,7 +192,7 @@
 
                         <!--Button Despesas-->
 
-                        <Button x:Name="Despesas"  Background="{x:Null}" BorderBrush="{x:Null}" Click="despesas_click"
+                        <Button x:Name="Despesas"  Background="{x:Null}" BorderBrush="{x:Null}" 
                                       >
 
                             <!--// Tooltip //-->
