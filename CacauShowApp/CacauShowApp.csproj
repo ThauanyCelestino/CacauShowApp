@@ -59,15 +59,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CSW\CadastrarDespesas.xaml">
+    <Page Include="CSW\CadastrarFuncionario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CSW\ListarDespesas.xaml">
+    <Page Include="CSW\CadastrarProduto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CSW\ListarCompras.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CSW\ListarEstoque.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CSW\ListarFuncionarios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,14 +90,20 @@
     <Compile Include="CSW\CadastrarCompra.xaml.cs">
       <DependentUpon>CadastrarCompra.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CSW\CadastrarDespesas.xaml.cs">
-      <DependentUpon>CadastrarDespesas.xaml</DependentUpon>
+    <Compile Include="CSW\CadastrarFuncionario.xaml.cs">
+      <DependentUpon>CadastrarFuncionario.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CSW\ListarDespesas.xaml.cs">
-      <DependentUpon>ListarDespesas.xaml</DependentUpon>
+    <Compile Include="CSW\CadastrarProduto.xaml.cs">
+      <DependentUpon>CadastrarProduto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CSW\ListarCompras.xaml.cs">
+      <DependentUpon>ListarCompras.xaml</DependentUpon>
     </Compile>
     <Compile Include="CSW\ListarEstoque.xaml.cs">
       <DependentUpon>ListarEstoque.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CSW\ListarFuncionarios.xaml.cs">
+      <DependentUpon>ListarFuncionarios.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

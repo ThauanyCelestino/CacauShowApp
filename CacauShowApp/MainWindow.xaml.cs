@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using CacauShowApp.CSW;
 namespace CacauShowApp
 {
     /// <summary>
@@ -23,6 +23,12 @@ namespace CacauShowApp
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarCompra compra = new CadastrarCompra();
+            compra.Show();
         }
     }
 }

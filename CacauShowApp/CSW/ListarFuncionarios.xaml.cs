@@ -15,13 +15,21 @@ using System.Windows.Shapes;
 namespace CacauShowApp.CSW
 {
     /// <summary>
-    /// Lógica interna para CadastrarCompra.xaml
+    /// Lógica interna para ListarFuncionarios.xaml
     /// </summary>
-    public partial class CadastrarCompra : Window
+    public partial class ListarFuncionarios : Window
     {
-        public CadastrarCompra()
+        public ListarFuncionarios()
         {
             InitializeComponent();
+        }
+
+     
+
+        private void Funcionario1_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarFuncionario funcionario   = new CadastrarFuncionario();
+            funcionario.ShowDialog();
         }
     }
 }
