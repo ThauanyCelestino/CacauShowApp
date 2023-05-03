@@ -32,8 +32,8 @@ namespace CacauShowApp.CSW
 
         private void Compras_Click(object sender, RoutedEventArgs e)
         {
-            CadastrarCompra cadastrarCompra = new CadastrarCompra();
-            cadastrarCompra.ShowDialog();   
+            ListarCompras compras = new ListarCompras();
+            compras.ShowDialog();
         }
 
         private void Funcionarios_Click(object sender, RoutedEventArgs e)
@@ -42,6 +42,16 @@ namespace CacauShowApp.CSW
             funcionario.ShowDialog();   
         }
 
-      
+        private void Vendas_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarVendas vendas = new CadastrarVendas(); 
+            vendas.ShowDialog();    
+        }   
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RealizarLogin login = new RealizarLogin();
+            login.ShowDialog();
+        }
     }
 }

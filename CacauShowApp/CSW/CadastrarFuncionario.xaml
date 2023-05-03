@@ -318,7 +318,7 @@
                         <Button x:Name="Funcionarios"  
                                 Background="{x:Null}" 
                                 BorderBrush="{x:Null}"
-                                Height="49">
+                                Height="49" Click="Funcionarios_Click_1">
 
 
                             <!--// Tooltip //-->
@@ -499,7 +499,7 @@
             <Button HorizontalAlignment="Left" Margin="497,524,0,0" VerticalAlignment="Top" Height="65" Width="138" BorderBrush="Black">
                 <Image Source= "/imagens/cancelar.png" Height="51" Width="51" />
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="705,524,0,0" VerticalAlignment="Top" Height="65" Width="138" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="710,524,0,0" VerticalAlignment="Top" Height="65" Width="138" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/imagens/salvar.png"></Image>
             </Button>
             <Label Content="Endereço" HorizontalAlignment="Left" Margin="111,411,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>

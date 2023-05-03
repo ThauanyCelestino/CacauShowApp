@@ -83,6 +83,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CSW\ListarVendas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CSW\RealizarLogin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -115,6 +119,9 @@
     </Compile>
     <Compile Include="CSW\ListarFuncionarios.xaml.cs">
       <DependentUpon>ListarFuncionarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CSW\ListarVendas.xaml.cs">
+      <DependentUpon>ListarVendas.xaml</DependentUpon>
     </Compile>
     <Compile Include="CSW\RealizarLogin.xaml.cs">
       <DependentUpon>RealizarLogin.xaml</DependentUpon>

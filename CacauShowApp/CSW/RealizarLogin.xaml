@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CacauShowApp"
         mc:Ignorable="d"
-        Title="RealizarLogin" Height="450" Width="800">
+        Title="RealizarLogin" Height="450" Width="800"
+        Topmost="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
     <Grid>
         <Grid Background="#FF131725" Height="NaN" Width="NaN">
             <TextBox TextWrapping="Wrap" Text="" Margin="122,70,122,70"/>

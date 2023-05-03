@@ -59,7 +59,7 @@
             <Button HorizontalAlignment="Left" Margin="555,539,0,0" VerticalAlignment="Top" Height="55" Width="130" BorderBrush="Black" RenderTransformOrigin="0.667,-0.999">
                 <Image Source= "/Imagens/cancelar.png" Height="51" Width="51" />
             </Button>
-            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="535,154,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="260" Height="40" RenderTransformOrigin="0.5,0.5" />
+            <TextBox FontSize="20" HorizontalAlignment="Left" Margin="535,154,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="288" Height="40" RenderTransformOrigin="0.5,0.5" />
             <TextBox FontSize="20" HorizontalAlignment="Left" Margin="90,154,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="288" Height="40" RenderTransformOrigin="0.5,0.5" />
             <Label Content="Código do Produto" HorizontalAlignment="Left" Margin="85,116,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="Quantidade do Produto" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="25" Margin="529,116,0,0" RenderTransformOrigin="0.5,0.5" Width="277">
@@ -510,7 +510,7 @@
             <Button  HorizontalAlignment="Left" Margin="805,254,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" RenderTransformOrigin="3.358,0.334" >
                 <Image Source="/Imagens/editar.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="805,364,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="810,364,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
             </Button>
 

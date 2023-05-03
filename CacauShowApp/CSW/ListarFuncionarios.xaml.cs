@@ -31,5 +31,35 @@ namespace CacauShowApp.CSW
             CadastrarFuncionario funcionario   = new CadastrarFuncionario();
             funcionario.ShowDialog();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RealizarLogin login = new RealizarLogin();
+            login.ShowDialog();
+        }
+
+        private void Funcionarios_Click(object sender, RoutedEventArgs e)
+        {
+            ListarFuncionarios funcionarios = new ListarFuncionarios();
+            funcionarios.ShowDialog();
+        }
+
+        private void Compras_Click(object sender, RoutedEventArgs e)
+        {
+            ListarCompras funcionarios = new ListarCompras();
+            funcionarios.ShowDialog();
+        }
+
+        private void Vendas_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarVendas ven = new CadastrarVendas();
+                ven.ShowDialog();
+        }
+
+        private void Estoque_Click(object sender, RoutedEventArgs e)
+        {
+            ListarEstoque est = new ListarEstoque();
+            est.ShowDialog();
+        }
     }
 }

@@ -80,7 +80,7 @@
 
                         <!--// Home //-->
 
-                        <Button x:Name="Estoque"   Background="{x:Null}" BorderBrush="{x:Null}"
+                        <Button x:Name="Estoque"   Background="{x:Null}" BorderBrush="{x:Null}" Click="Estoque_Click"
                                       >
 
                             <!--// Tooltip //-->
@@ -161,7 +161,7 @@
 
                         <!--Button Vendas-->
 
-                        <Button x:Name="Vendas"  Background="{x:Null}" BorderBrush="{x:Null}"
+                        <Button x:Name="Vendas"  Background="{x:Null}" BorderBrush="{x:Null}" Click="Vendas_Click"
                                       >
 
                             <!--// Tooltip //-->
@@ -240,7 +240,7 @@
 
 
                         <!--// Button Compras //-->
-                        <Button x:Name="Compras"  Background="{x:Null}" BorderBrush="{x:Null}" Height="50"
+                        <Button x:Name="Compras"  Background="{x:Null}" BorderBrush="{x:Null}" Height="50" Click="Compras_Click"
                                       >
 
                             <!--// Tooltip //-->
@@ -318,7 +318,7 @@
                         <Button x:Name="Funcionarios"  
                                 Background="{x:Null}" 
                                 BorderBrush="{x:Null}"
-                                Height="49">
+                                Height="49" Click="Funcionarios_Click">
 
 
                             <!--// Tooltip //-->
@@ -396,7 +396,7 @@
 
 
                         <!--// Button Sair //-->
-                        <Button Background="{x:Null}" BorderBrush="{x:Null}" 
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click" 
                                       >
 
                             <!--// Tooltip //-->
@@ -490,14 +490,14 @@
             </Button>
 
 
-            <Button  HorizontalAlignment="Left" Margin="825,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
+            <Button  HorizontalAlignment="Left" Margin="805,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
                 <Image Source="/Imagens/excluir.png"></Image>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="765,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
+            <Button  HorizontalAlignment="Left" Margin="745,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
                 <Image Source="/Imagens/editar.png" Height="30" Width="30"></Image>
             </Button>
             <TextBox HorizontalAlignment="Left" Margin="85,106,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="600" Height="30"/>
-            <Button  HorizontalAlignment="Left" Margin="700,159,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="675,159,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
             </Button>
             <Button x:Name="Compra"  HorizontalAlignment="Left" Margin="85,159,0,0" VerticalAlignment="Top" Height="45" Width="90" BorderBrush="Black" Click="Compra_Click">
