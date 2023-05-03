@@ -8,7 +8,7 @@
         Title="RealizarLogin" Height="450" Width="800"
         Topmost="True"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="None">
+        WindowStyle="ToolWindow">
     <Grid>
         <Grid Background="#FF131725" Height="NaN" Width="NaN">
             <TextBox TextWrapping="Wrap" Text="" Margin="122,70,122,70"/>
