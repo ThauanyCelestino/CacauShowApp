@@ -67,6 +67,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CSW\CadastrarVendas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="CSW\ListarCompras.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +82,10 @@
     <Page Include="CSW\ListarFuncionarios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CSW\RealizarLogin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -96,6 +104,9 @@
     <Compile Include="CSW\CadastrarProduto.xaml.cs">
       <DependentUpon>CadastrarProduto.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CSW\CadastrarVendas.xaml.cs">
+      <DependentUpon>CadastrarVendas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CSW\ListarCompras.xaml.cs">
       <DependentUpon>ListarCompras.xaml</DependentUpon>
     </Compile>
@@ -104,6 +115,9 @@
     </Compile>
     <Compile Include="CSW\ListarFuncionarios.xaml.cs">
       <DependentUpon>ListarFuncionarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CSW\RealizarLogin.xaml.cs">
+      <DependentUpon>RealizarLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -170,6 +184,9 @@
     <Resource Include="Imagens\tgBtn_MouseOver.png" />
     <Resource Include="Imagens\vendaimg.png" />
     <Resource Include="Imagens\verificado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagens\logoCacauShow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

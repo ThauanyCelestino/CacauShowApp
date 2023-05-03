@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CacauShowApp.CSW"
         mc:Ignorable="d"
-        Title="ListarFuncionarios" Height="600" 
-        Width="870"
+        Title="ListarFuncionarios" Height="680" 
+        Width="900"
         Topmost="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ToolWindow">
@@ -567,10 +567,10 @@
             </Button>
 
 
-            <Button  HorizontalAlignment="Left" Margin="780,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
+            <Button  HorizontalAlignment="Left" Margin="825,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
                 <Image Source="/Imagens/excluir.png"></Image>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="720,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
+            <Button  HorizontalAlignment="Left" Margin="765,159,0,0" VerticalAlignment="Top" Height="45" Width="50" BorderBrush="Black">
                 <Image Source="/Imagens/editar.png" Height="30" Width="30"></Image>
             </Button>
 
@@ -578,7 +578,7 @@
                 <Image x:Name="Funcionario" Source="/Imagens/registro.png"></Image>
             </Button>
             <TextBox HorizontalAlignment="Left" Margin="85,106,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="600" Height="30"/>
-            <Button  HorizontalAlignment="Left" Margin="655,159,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="700,159,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
             </Button>
         </Grid>

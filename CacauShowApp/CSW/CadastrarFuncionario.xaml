@@ -5,40 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CacauShowApp.CSW"
         mc:Ignorable="d"
-        Title="CadastrarFuncionario"  Height="600" 
-         Width="870"
+        Title="CadastrarFuncionario" Height="650" 
+        Width="900"
         Topmost="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ToolWindow">
 
+
+
     <Window.Resources>
 
-
-        <!--// Toggle Button Style Template //-->
-
-        <ImageBrush x:Key="tb_mouse_over"
-                    ImageSource="/Imagens/tgBtn_MouseOver.png"/>
-
-        <!--// Text font style //-->
-
-        <Style x:Key="font_style" TargetType="TextBlock">
-
-            <Setter Property="FontFamily"
-                    Value="Fonts/Roboto-Light.ttf #Roboto"/>
-
-            <Setter Property="VerticalAlignment"
-                    Value="Center"/>
-
-            <Setter Property="HorizontalAlignment"
-                    Value="Left"/>
-
-            <Setter Property="Foreground"
-                    Value="White"/>
-
-            <Setter Property="FontSize"
-                    Value="20"/>
-
-        </Style>
 
         <!--// Tooltip Style Template //-->
 
@@ -61,129 +37,28 @@
 
         </Style>
 
-        <!--// App Close Button Style Template //-->
-
-        <ImageBrush x:Key="CloseBtn_MouseOver" ImageSource="/Imagens/closeBtn_MouseOver.png"/>
-
-        <Style x:Key="Close_btn" TargetType="{x:Type Button}">
-
-            <Setter Property="Template">
-
-                <Setter.Value>
-
-                    <ControlTemplate TargetType="{x:Type Button}">
-
-                        <Border x:Name="button"
-                                BorderThickness="0"
-                                Background="{TemplateBinding Background}"
-                                SnapsToDevicePixels="True">
-
-                        </Border>
-
-                        <ControlTemplate.Triggers>
-
-                            <Trigger Property="IsMouseOver"
-                                     Value="True">
-
-                                <Setter Property="Background"
-                                        TargetName="button"
-                                        Value="{StaticResource CloseBtn_MouseOver}"/>
-
-                            </Trigger>
-
-                        </ControlTemplate.Triggers>
-
-                    </ControlTemplate>
-
-                </Setter.Value>
-
-            </Setter>
-
-        </Style>
-
-
-
-
-        <Style x:Key="tb_style" TargetType="{x:Type ToggleButton}">
-
-            <Setter Property="Template">
-
-                <Setter.Value>
-
-                    <ControlTemplate TargetType="{x:Type ToggleButton}">
-
-                        <Border  x:Name="border"
-                                 BorderThickness="{TemplateBinding BorderThickness}"
-                                 Background="{TemplateBinding Background}"
-                                 SnapsToDevicePixels="True">
-
-                        </Border>
-
-                        <ControlTemplate.Triggers>
-
-                            <Trigger Property="IsMouseOver" Value="true">
-
-                                <Setter Property="Background"
-                                        TargetName="border"
-                                        Value="{StaticResource tb_mouse_over}"/>
-
-                                <Setter Property="BorderBrush"
-                                        TargetName="border"
-                                        Value="{StaticResource tb_mouse_over}"/>
-
-                            </Trigger>
-
-                            <Trigger Property="IsChecked" Value="true">
-
-                                <Setter Property="Background"
-                                        TargetName="border"
-                                        Value="{StaticResource tb_mouse_over}"/>
-
-                                <Setter Property="BorderBrush"
-                                        TargetName="border"
-                                        Value="{StaticResource tb_mouse_over}"/>
-
-                            </Trigger>
-
-                        </ControlTemplate.Triggers>
-
-                    </ControlTemplate>
-
-                </Setter.Value>
-
-            </Setter>
-
-        </Style>
 
     </Window.Resources>
 
-    <Grid>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
 
         <!--// Background Color //-->
 
-        <Grid Background="#FF131725" Margin="0,10,0,-10">
-
-            <!--// Background Image //-->
-
-            <!--// App Close Button //-->
-
-            <Grid>
-
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-
-            </Grid>
+        <Grid  Background="#FF131725" Grid.ColumnSpan="2" Margin="0,0,0,-5" Grid.RowSpan="3">
 
 
-            <!--// Navigation Panel //-->
+
+            <!--// Menu de navegação//-->
 
             <Grid   x:Name="nav_pnl"
                     HorizontalAlignment="Left"
@@ -192,59 +67,27 @@
 
                 <StackPanel x:Name="st_pnl">
 
-                    <!--// Grid for the Menu Toggle Button //-->
-
-                    <Grid Height="90">
+                    <!--// Icon Menu //-->
 
 
-                        <!--// Menu title text //-->
+                    <Image HorizontalAlignment="Left" Height="90" Margin="10,19,0,0" VerticalAlignment="Top" Width="50" Source="/Imagens/layout.png"/>
 
-                        <TextBlock  Grid.Row="1"
-                                    Grid.Column="0"
-                                    Margin="73,-20,0,0"
-                                    Text="M E N U"
-                                    Foreground="White"
-                                    FontSize="22"
-                                    Background="Transparent"
-                                    HorizontalAlignment="Left"
-                                    VerticalAlignment="Center"
-                                    Style="{StaticResource font_style}">
-                            
-                            <!--// Shadow Effect //-->
 
-                            <TextBlock.Effect>
-
-                                <DropShadowEffect  BlurRadius="10"
-                                                   ShadowDepth="1"
-                                                   Direction="-90"
-                                                   Color="White"/>
-
-                            </TextBlock.Effect>
-
-                        </TextBlock>
-                        <Image HorizontalAlignment="Left" Height="45" Margin="10,19,0,0" VerticalAlignment="Top" Width="50" Source="/Imagens/layout.png"/>
-
-                        <!--// Toggle Button //-->
-
-                    </Grid>
-
-                    <!--// ListView with menu list items //-->
+                    <!--// Stack panel with buttons //-->
 
                     <StackPanel  x:Name="LV"
-                               Background="Transparent"
-                               ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                               Background="Transparent">
 
                         <!--// Home //-->
-                        <!--// Home //-->
 
-                        <Button  Background="{x:Null}" BorderBrush="{x:Null}"
+                        <Button x:Name="Estoque"   Background="{x:Null}" BorderBrush="{x:Null}"
                                       >
 
                             <!--// Tooltip //-->
 
                             <Button.ToolTip>
 
-                                <ToolTip x:Name="tt_home"
+                                <ToolTip x:Name="tt_estoque"
                                          Content="Estoque"
                                          Style="{StaticResource tt_style}"/>
 
@@ -304,110 +147,28 @@
                                 </Style>
                             </Button.Style>
 
-                            <StackPanel Orientation="Horizontal"
-                                        Width="230">
+                            <!-- Estoque Icon   -->
 
-                                <Image Source="/Imagens/estoque-pronto.png"
+
+                            <Image Source="/Imagens/estoque-pronto.png"
                                        Stretch="Uniform" Width="58" Height="39"
                                        />
 
-                                <TextBlock Text="Estoque"
-                                           Margin="10,6,0,0"
-                                           Style="{StaticResource font_style}"/>
-
-                            </StackPanel>
-
                         </Button>
 
-                        <Button  Background="{x:Null}" BorderBrush="{x:Null}"
+
+
+
+                        <!--Button Vendas-->
+
+                        <Button x:Name="Vendas"  Background="{x:Null}" BorderBrush="{x:Null}"
                                       >
 
                             <!--// Tooltip //-->
 
                             <Button.ToolTip>
 
-                                <ToolTip x:Name="tt_contacts"
-                                         Content="Despesas"
-                                         Style="{StaticResource tt_style}"/>
-
-                            </Button.ToolTip>
-
-                            <Button.Style>
-                                <Style TargetType="{x:Type Button}">
-
-                                    <Setter Property="Template">
-
-                                        <Setter.Value>
-
-                                            <ControlTemplate TargetType="{x:Type Button}">
-
-                                                <Border x:Name="Bd"
-                                                    Height="50"
-                                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                                    BorderThickness="{TemplateBinding BorderThickness}"
-                                                    Background="{TemplateBinding Background}"
-                                                    Padding="{TemplateBinding Padding}"
-                                                    SnapsToDevicePixels="True">
-
-                                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-
-                                                </Border>
-
-                                                <ControlTemplate.Triggers>
-
-                                                    <MultiTrigger>
-
-                                                        <MultiTrigger.Conditions>
-
-                                                            <Condition Property="IsMouseOver" Value="True"/>
-
-                                                        </MultiTrigger.Conditions>
-
-                                                        <Setter Property="Background"
-                                                            TargetName="Bd"
-                                                            Value="#404D5B"/>
-
-                                                        <Setter Property="BorderBrush"
-                                                            TargetName="Bd"
-                                                            Value="#404D5B"/>
-
-                                                    </MultiTrigger>
-
-                                                </ControlTemplate.Triggers>
-
-                                            </ControlTemplate>
-
-                                        </Setter.Value>
-
-                                    </Setter>
-
-                                </Style>
-                            </Button.Style>
-
-                            <StackPanel Orientation="Horizontal"
-                                        Width="230">
-
-                                <Image Source="/Imagens/dsimg.png"
-                                       Stretch="Uniform"
-                                       Width="60" Height="45"/>
-
-                                <TextBlock Text="Despesas"
-                                           Margin="10,6,0,0"
-                                           Style="{StaticResource font_style}"/>
-
-                            </StackPanel>
-
-                        </Button>
-                        <Button  Background="{x:Null}" BorderBrush="{x:Null}"
-                                      >
-
-                            <!--// Tooltip //-->
-
-                            <Button.ToolTip>
-
-                                <ToolTip x:Name="tt_messages"
+                                <ToolTip x:Name="tt_vendas"
                                          Content="Vendas"
                                          Style="{StaticResource tt_style}"/>
 
@@ -467,31 +228,27 @@
                                 </Style>
                             </Button.Style>
 
-                            <StackPanel Orientation="Horizontal"
-                                        Width="230">
+                            <!--Vendas icon-->
 
-                                <Image Source="/Imagens/vendaimg.png"
+                            <Image Source="/Imagens/vendaimg.png"
                                        Stretch="Uniform"
-                                       Width="61" Height="39"/>
+                                       Width="61" Height="39"
+                                />
 
-                                <TextBlock Text="Vendas"
-                                           Margin="10,6,0,0"
-                                           Style="{StaticResource font_style}"/>
-
-                            </StackPanel>
 
                         </Button>
 
-                        <!--// Messages //-->
-                        <Button  Background="{x:Null}" BorderBrush="{x:Null}" Height="50"
+
+                        <!--// Button Compras //-->
+                        <Button x:Name="Compras"  Background="{x:Null}" BorderBrush="{x:Null}" Height="50"
                                       >
 
                             <!--// Tooltip //-->
 
                             <Button.ToolTip>
 
-                                <ToolTip x:Name="tt_maps"
-                                         Content="Maps"
+                                <ToolTip x:Name="tt_compras"
+                                         Content="Compras"
                                          Style="{StaticResource tt_style}"/>
 
                             </Button.ToolTip>
@@ -550,28 +307,26 @@
                                 </Style>
                             </Button.Style>
 
-                            <StackPanel Orientation="Horizontal"
-                                        Width="230">
 
-                                <Image Source="/Imagens/compra.png"
-                                       Width="70" Height="43"/>
-
-                                <TextBlock Text="Maps"
-                                           Margin="25,0,0,0"
-                                           Style="{StaticResource font_style}"/>
-
-                            </StackPanel>
+                            <!--Compras icon-->
+                            <Image Source="/Imagens/compra.png"
+                                       Width="70" Height="43" Margin="10,0,0,0"/>
 
                         </Button>
-                        <Button  Background="{x:Null}" BorderBrush="{x:Null}" Height="49"
-                                      >
+
+                        <!--Button Funcionários-->
+                        <Button x:Name="Funcionarios"  
+                                Background="{x:Null}" 
+                                BorderBrush="{x:Null}"
+                                Height="49">
+
 
                             <!--// Tooltip //-->
 
                             <Button.ToolTip>
 
-                                <ToolTip x:Name="tt_settings"
-                                         Content="Settings"
+                                <ToolTip x:Name="tt_funcionario"
+                                         Content="Funcionários"
                                          Style="{StaticResource tt_style}"/>
 
                             </Button.ToolTip>
@@ -630,23 +385,17 @@
                                 </Style>
                             </Button.Style>
 
-                            <StackPanel Orientation="Horizontal"
-                                        Width="230">
+                            <!--Funcionários Icon-->
 
-                                <Image Source="/Imagens/func.png"
+                            <Image Source="/Imagens/func.png"
                                        Width="60" Height="45"/>
 
-                                <TextBlock Text="Settings"
-                                           Margin="25,0,0,0"
-                                           Style="{StaticResource font_style}"/>
 
-                            </StackPanel>
 
                         </Button>
 
-                        <!--// Maps //-->
 
-                        <!--// Settings //-->
+                        <!--// Button Sair //-->
                         <Button Background="{x:Null}" BorderBrush="{x:Null}" 
                                       >
 
@@ -654,8 +403,8 @@
 
                             <Button.ToolTip>
 
-                                <ToolTip x:Name="tt_signout"
-                                         Content="Sign Out"
+                                <ToolTip x:Name="tt_sair"
+                                         Content="Sair"
                                          Style="{StaticResource tt_style}"/>
 
                             </Button.ToolTip>
@@ -714,26 +463,14 @@
                                 </Style>
                             </Button.Style>
 
-                            <StackPanel Orientation="Horizontal"
-                                        Width="230">
+                            <!--Sair-->
 
-                                <Image Source="/Imagens/img_signout.png"
+                            <Image Source="/Imagens/img_signout.png"
                                        Stretch="None"
                                        Height="48" Width="60"/>
 
-                                <TextBlock Text="Sign Out"
-                                           Margin="25,0,0,0"
-                                           Style="{StaticResource font_style}"/>
-
-                            </StackPanel>
 
                         </Button>
-
-                        <!--// Sign Out //-->
-
-
-
-                        <!--// Listview items style template //-->
 
 
 
@@ -745,36 +482,33 @@
             </Grid>
 
             <Label Content="Cadastrar Funcionário" Margin="261,19,205,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="40" Height="70" Width="NaN"/>
-            <TextBox HorizontalAlignment="Left" Margin="120,109,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="660" Height="30"/>
+            <TextBox HorizontalAlignment="Left" Margin="115,109,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="725" Height="30"/>
             <Label Content="Função" HorizontalAlignment="Left" Margin="111,151,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" RenderTransformOrigin="1.074,2.556"/>
             <Label Content="E-mail" HorizontalAlignment="Left" Margin="401,241,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <Label Content="Contato" HorizontalAlignment="Left" Margin="111,334,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+            <Label Content="Contato" HorizontalAlignment="Left" Margin="111,326,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <Label Content="CPF" HorizontalAlignment="Left" Margin="473,149,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" RenderTransformOrigin="-0.485,0.774"/>
             <Label Content="RG" HorizontalAlignment="Left" Margin="110,241,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" RenderTransformOrigin="1.549,-0.61"/>
-            <Label Content="Data de Nascimento" HorizontalAlignment="Left" Margin="465,336,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" RenderTransformOrigin="0.853,1.18"/>
+            <Label Content="Data de Nascimento" HorizontalAlignment="Left" Margin="551,329,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" RenderTransformOrigin="0.853,1.18"/>
             <TextBox HorizontalAlignment="Left" Margin="115,189,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="330" Height="30" />
-            <TextBox HorizontalAlignment="Left" Margin="480,189,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="300" Height="30"/>
+            <TextBox HorizontalAlignment="Left" Margin="480,189,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="360" Height="30"/>
             <TextBox HorizontalAlignment="Left" Margin="117,279,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="223" Height="30"/>
-            <TextBox HorizontalAlignment="Left" Margin="405,279,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="375" Height="30"/>
-            <TextBox HorizontalAlignment="Left" Margin="117,374,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="288" Height="30" />
-            <DatePicker HorizontalAlignment="Left" Margin="470,374,0,0" VerticalAlignment="Top" Height="35" Width="246" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Margin="405,279,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="435" Height="30"/>
+            <TextBox HorizontalAlignment="Left" Margin="115,364,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="288" Height="30" />
+            <DatePicker HorizontalAlignment="Left" Margin="555,364,0,0" VerticalAlignment="Top" Height="35" Width="280" FontSize="20"/>
 
-            <Button HorizontalAlignment="Left" Margin="650,494,0,0" VerticalAlignment="Top" Height="65" Width="75" BorderBrush="Black">
+            <Button HorizontalAlignment="Left" Margin="497,524,0,0" VerticalAlignment="Top" Height="65" Width="138" BorderBrush="Black">
                 <Image Source= "/imagens/cancelar.png" Height="51" Width="51" />
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="755,494,0,0" VerticalAlignment="Top" Height="65" Width="80" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="705,524,0,0" VerticalAlignment="Top" Height="65" Width="138" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/imagens/salvar.png"></Image>
             </Button>
             <Label Content="Endereço" HorizontalAlignment="Left" Margin="111,411,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-            <TextBox HorizontalAlignment="Left" Margin="115,449,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="670" Height="30" />
-
+            <TextBox HorizontalAlignment="Left" Margin="115,449,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="720" Height="30" />
+            <Label Content="Nome" HorizontalAlignment="Left" Margin="110,66,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
 
         </Grid>
 
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="115,79,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
-        <Button x:Name="Funcionario"  HorizontalAlignment="Left" Margin="755,384,0,0" VerticalAlignment="Top" Height="45" Width="90" BorderBrush="Black" Click="Funcionario_Click">
-            <Image Source="/Imagens/registro.png"/>
-        </Button>
+
 
 
 

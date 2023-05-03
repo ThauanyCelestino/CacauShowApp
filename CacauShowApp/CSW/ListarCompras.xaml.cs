@@ -23,5 +23,16 @@ namespace CacauShowApp.CSW
         {
             InitializeComponent();
         }
+
+        private void Produto_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Compra_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarCompra compra = new CadastrarCompra();
+            compra.ShowDialog();
+        }
     }
 }

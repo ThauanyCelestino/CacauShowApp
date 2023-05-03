@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CacauShowApp.CSW"
         mc:Ignorable="d"
-        Title="CadastrarCompra" Height="680" 
+        Title="CadastrarCompra" Height="650" 
         Width="900"
         Topmost="True"
         WindowStartupLocation="CenterScreen"
@@ -72,10 +72,10 @@
             <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,209,0,0" VerticalAlignment="Top" Width="235"/>
             <DatePicker FontSize="20" HorizontalAlignment="Left" Margin="615,124,0,0" VerticalAlignment="Top" Width="235"/>
 
-            <Button  HorizontalAlignment="Left" Margin="780,569,0,0" VerticalAlignment="Top" Height="65" Width="80" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="710,539,0,0" VerticalAlignment="Top" Height="65" Width="138" FontSize="25" BorderBrush="{x:Null}"  >
                 <Image Source="/imagens/salvar.png"></Image>
             </Button>
-            <Button HorizontalAlignment="Left" Margin="680,569,0,0" VerticalAlignment="Top" Height="65" Width="75" BorderBrush="Black">
+            <Button HorizontalAlignment="Left" Margin="527,539,0,0" VerticalAlignment="Top" Height="65" Width="138" BorderBrush="Black">
                 <Image Source= "/imagens/cancelar.png" Height="51" Width="51" />
             </Button>
 
@@ -503,14 +503,14 @@
             </Grid>
             <TextBox FontSize="20" HorizontalAlignment="Left" Margin="265,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
             <TextBox FontSize="20" HorizontalAlignment="Left" Margin="445,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="30" RenderTransformOrigin="0.5,0.5" />
-            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="100,354,165,115" Height="NaN"/>
-            <Button  HorizontalAlignment="Left" Margin="740,369,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="100,339,165,115" Height="NaN"/>
+            <Button  HorizontalAlignment="Left" Margin="740,344,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="740,424,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="740,399,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/excluir.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="740,479,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="740,454,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/editar.png"/>
             </Button>
             <Label Content="Forma de pagamento" HorizontalAlignment="Left" Margin="90,251,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" Width="255"/>
@@ -520,6 +520,9 @@
             <Label Content="Cód." HorizontalAlignment="Left" Margin="425,86,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
             <TextBox BorderThickness="1" HorizontalAlignment="Left" Margin="430,129,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="165" Height="30" RenderTransformOrigin="0.5,0.5" FontSize="20" FontFamily="Arial" />
             <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="95,124,0,0" VerticalAlignment="Top" Width="290" Height="30" />
+            <Button HorizontalAlignment="Left" Margin="100,534,0,0" VerticalAlignment="Top" Height="66" Width="130" BorderBrush="Black" RenderTransformOrigin="0.667,-0.999" Content="Novo Item" FontSize="20"/>
+            <Label Content="Status" HorizontalAlignment="Left" Margin="653,249,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25"/>
+            <ComboBox FontSize="20" HorizontalAlignment="Left" Margin="660,289,0,0" VerticalAlignment="Top" Width="190" Height="30" RenderTransformOrigin="0.5,0.5"/>
 
 
         </Grid>
