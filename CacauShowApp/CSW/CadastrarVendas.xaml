@@ -54,7 +54,7 @@
         
         <Grid  Background="#FF131725" Grid.ColumnSpan="2" Margin="0,0,0,-5" Grid.RowSpan="3">
 
-            <Label Content="Cadastrar Venda" Margin="315,14,73,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial                    " FontSize="40" Height="70"/>
+            <Label Content="Realizar Venda" Margin="315,14,73,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial                    " FontSize="40" Height="70"/>
             <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="90,234,105,160"/>
             <Button HorizontalAlignment="Left" Margin="555,539,0,0" VerticalAlignment="Top" Height="55" Width="130" BorderBrush="Black" RenderTransformOrigin="0.667,-0.999">
                 <Image Source= "/Imagens/cancelar.png" Height="51" Width="51" />
