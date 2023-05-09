@@ -510,7 +510,7 @@
             <Button  HorizontalAlignment="Left" Margin="805,254,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" RenderTransformOrigin="3.358,0.334" >
                 <Image Source="/Imagens/editar.png"/>
             </Button>
-            <Button  HorizontalAlignment="Left" Margin="810,364,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
+            <Button  HorizontalAlignment="Left" Margin="805,373,0,0" VerticalAlignment="Top" Height="45" Width="55" FontSize="25" BorderBrush="{x:Null}" >
                 <Image Source="/Imagens/verificado.png"/>
             </Button>
 
