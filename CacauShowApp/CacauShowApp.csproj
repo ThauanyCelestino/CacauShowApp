@@ -71,6 +71,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="CSW\CaixaHilary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CSW\ListarCompras.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -110,6 +114,9 @@
     </Compile>
     <Compile Include="CSW\CadastrarVendas.xaml.cs">
       <DependentUpon>CadastrarVendas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CSW\CaixaHilary.xaml.cs">
+      <DependentUpon>CaixaHilary.xaml</DependentUpon>
     </Compile>
     <Compile Include="CSW\ListarCompras.xaml.cs">
       <DependentUpon>ListarCompras.xaml</DependentUpon>
