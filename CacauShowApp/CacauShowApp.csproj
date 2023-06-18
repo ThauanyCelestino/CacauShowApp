@@ -55,30 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="CSW\CadastrarCompra.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CSW\CadastrarFuncionario.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CSW\CadastrarProduto.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CSW\ListarCompras.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CSW\ListarEstoque.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CSW\ListarFuncionarios.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,24 +62,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CSW\CadastrarCompra.xaml.cs">
-      <DependentUpon>CadastrarCompra.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CSW\CadastrarFuncionario.xaml.cs">
-      <DependentUpon>CadastrarFuncionario.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CSW\CadastrarProduto.xaml.cs">
-      <DependentUpon>CadastrarProduto.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CSW\ListarCompras.xaml.cs">
-      <DependentUpon>ListarCompras.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CSW\ListarEstoque.xaml.cs">
-      <DependentUpon>ListarEstoque.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CSW\ListarFuncionarios.xaml.cs">
-      <DependentUpon>ListarFuncionarios.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -136,40 +94,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Imagens\blg.png" />
-    <Resource Include="Imagens\cancelar.png" />
-    <Resource Include="Imagens\cardapio.png" />
-    <Resource Include="Imagens\casa.png" />
-    <Resource Include="Imagens\closeBtn_default.png" />
-    <Resource Include="Imagens\closeBtn_MouseOver.png" />
-    <Resource Include="Imagens\compra.png" />
-    <Resource Include="Imagens\dinheiro.png" />
-    <Resource Include="Imagens\dsimg.png" />
-    <Resource Include="Imagens\editar.png" />
-    <Resource Include="Imagens\entregador.png" />
-    <Resource Include="Imagens\estoque-pronto.png" />
-    <Resource Include="Imagens\excluir.png" />
-    <Resource Include="Imagens\func.png" />
-    <Resource Include="Imagens\homeimg.png" />
-    <Resource Include="Imagens\img_background.png" />
-    <Resource Include="Imagens\img_contact.png" />
-    <Resource Include="Imagens\img_home.png" />
-    <Resource Include="Imagens\img_map.png" />
-    <Resource Include="Imagens\img_message.png" />
-    <Resource Include="Imagens\img_setting.png" />
-    <Resource Include="Imagens\img_signout.png" />
-    <Resource Include="Imagens\layout.png" />
-    <Resource Include="Imagens\list.png" />
-    <Resource Include="Imagens\logocacaus.png" />
-    <Resource Include="Imagens\lupa.png" />
-    <Resource Include="Imagens\orcamento.png" />
-    <Resource Include="Imagens\registro.png" />
-    <Resource Include="Imagens\salvar.png" />
-    <Resource Include="Imagens\tgBtn_default.png" />
-    <Resource Include="Imagens\tgBtn_MouseOver.png" />
-    <Resource Include="Imagens\vendaimg.png" />
-    <Resource Include="Imagens\verificado.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
